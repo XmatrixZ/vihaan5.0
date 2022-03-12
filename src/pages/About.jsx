@@ -4,7 +4,6 @@ import Japnoor from "../assets/images/Japnoor.jpeg"
 import Kshitij from "../assets/images/Kshitij.png";
 import Abhinav from "../assets/images/Abhinav.jpeg";
 import Shivansh from "../assets/images/Shivansh.jpg"
-import teamImg from "../assets/images/img-07.jpg"
 function About() {
   return (
     <section className="team-section">
@@ -12,17 +11,17 @@ function About() {
         <div className="row">
           <div className="section-title">
             <h1>Our Team</h1>
-            <p>TRIO_KNIGHTS</p>
+            <p>Rasenshuriken 2.0</p>
           </div>
         </div>
         <div className="row">
           <div className="team-items">
             <div className="item">
-              <img src={Abhinav} alt="team" />
+              <img src={Kshitij.png} alt="team" />
               <div className="inner">
                 <div className="info">
-                  <h5>Aditya Kumar</h5>
-                  <p>WEB AND BLOCKCHAIN DEVELOPER</p>
+                  <h5>Kshitij Singh</h5>
+                  <p>Full Stack Developer and a UI/UX Designer</p>
                   <div className="social-links">
                     <a href="n">
                       <span className="fa fa-facebook"></span>
@@ -41,11 +40,11 @@ function About() {
               </div>
             </div>
             <div className="item">
-              <img src={Japnoor} alt="team" />
+              <img src={Abhinav.jpeg} alt="team" />
               <div className="inner">
                 <div className="info">
-                  <h5>AMANDEEP SINGH</h5>
-                  <p>MERN STACK WEB DEVELOPER AND KOTLIN APP DEVELOPER</p>
+                  <h5>Abhinav Aggarwal</h5>
+                  <p>Full Stack Developer and ML Expert</p>
                   <div className="social-links">
                     <a href="n">
                       <span className="fa fa-facebook"></span>
@@ -64,10 +63,10 @@ function About() {
               </div>
             </div>
             <div className="item">
-              <img src={Kshitij} alt="team" />
+              <img src={Japnoor.jpeg} alt="team" />
               <div className="inner">
                 <div className="info">
-                  <h5>KSHITIJ SINGH</h5>
+                  <h5>JAPNOOR SINGH</h5>
                   <p>GRAPHIC DESIGNER AND FRONT-END WEB DEVELOPER</p>
                   <div className="social-links">
                     <a href="n">
@@ -87,11 +86,11 @@ function About() {
               </div>
             </div>
             <div className="item">
-              <img src={Shivansh} alt="team" />
+              <img src={Shivansh.jpg} alt="team" />
               <div className="inner">
                 <div className="info">
-                  <h5>KSHITIJ SINGH</h5>
-                  <p>GRAPHIC DESIGNER AND FRONT-END WEB DEVELOPER</p>
+                  <h5>Shivansh Dhondiyal</h5>
+                  <p>Full Stack Developer</p>
                   <div className="social-links">
                     <a href="n">
                       <span className="fa fa-facebook"></span>

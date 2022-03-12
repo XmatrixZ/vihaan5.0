@@ -6,41 +6,23 @@ import { Link } from "react-router-dom";
 
 const MY_ACCOUNT = [
   {
-    display: "Author Profile",
-    url: "/seller-profile",
+    display: "Abhinav Aggarwal",
+    url: "/https://www.linkedin.com/in/abhinav-aggrawal-aa97b6201/",
   },
   {
-    display: "Create Item",
-    url: "/create",
+    display: "Kshitij Singh",
+    url: "https://www.linkedin.com/in/kshitij-singh-29b23b201/",
   },
   {
-    display: "Collection",
-    url: "/market",
+    display: "Shivansh Dhondiyal",
+    url: "https://www.linkedin.com/in/shivansh-dhondiyal-427aaa204/",
   },
   {
-    display: "Edit Profile",
-    url: "/edit-profile",
+    display: "Japnoor Singh",
+    url: "https://www.linkedin.com/in/japnoor-singh-85393a146/",
   },
 ];
 
-const RESOURCES = [
-  {
-    display: "Help Center",
-    url: "#",
-  },
-  {
-    display: "Partner",
-    url: "#",
-  },
-  {
-    display: "Community",
-    url: "#",
-  },
-  {
-    display: "Activity",
-    url: "#",
-  },
-];
 
 const COMPANY = [
   {
@@ -52,12 +34,12 @@ const COMPANY = [
     url: "#",
   },
   {
-    display: "Ranking",
-    url: "#",
-  },
-  {
     display: "Contact Us",
     url: "/contact",
+  },
+  {
+    display: "Dashboard",
+    url: "#",
   },
 ];
 
@@ -75,10 +57,7 @@ const Footer = () => {
                 NFT's
               </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente voluptates dignissimos a consequatur porro, ducimus
-                alias esse magni! Voluptatem accusamus laudantium placeat
-                doloribus quos culpa.
+              Our platform is tailor-made for novice creators who don’t get opportunities in this competitive world. Similarly, our platform makes it easy for companies, especially, the upcoming startups to hire innovators at a cheaper rate. This model solves both the major problems which we have discussed before. The video demonstrations/ image of the project can be included as an NFT by the creators/ developers.
               </p>
             </div>
           </Col>
@@ -86,16 +65,6 @@ const Footer = () => {
             <h5>My Account</h5>
             <ListGroup className="list__group">
               {MY_ACCOUNT.map((item, index) => (
-                <ListGroupItem key={index} className="list__item__footer">
-                  <Link to={item.url}>{item.display}</Link>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Col>
-          <Col lg="2" md="3" sm="6">
-            <h5>RESOURCES</h5>
-            <ListGroup className="list__group">
-              {RESOURCES.map((item, index) => (
                 <ListGroupItem key={index} className="list__item__footer">
                   <Link to={item.url}>{item.display}</Link>
                 </ListGroupItem>
@@ -136,7 +105,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg="12" className="mt-4 text-center">
-            <p className="copyright">Copyrights reserved and was developed by XXXXX</p>
+            <p className="copyright">Made with ❤️ by DTU STUDENTS</p>
           </Col>
         </Row>
       </Container>
