@@ -1,19 +1,23 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {Container, Row, Col} from "reactstrap"
 import {Link} from "react-router-dom"
-import "aos"
 import NftCard from "../Nft-card/NftCard"
 import {NFT__DATA} from "../../../assets/data/data"
 
 import "./liveAuction.css"
-import { AOS } from 'aos'
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const LiveAuction = () => {
-  // AOS.init();
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, []);
+
   return (
-    <section
-      className="LiveAuctionBg"
-    >
+    <section className="LiveAuctionBg">
       <Container>
         <Row>
           <Col lg="12" className="mb-5">
@@ -25,7 +29,14 @@ const LiveAuction = () => {
             </div>
           </Col>
           {NFT__DATA.slice(0.4).map((item) => (
-            <Col lg="3" key={item.id}>
+            <Col
+              lg="3"
+              key={item.id}
+              data-aos="fade-up"
+              data-aos-offset="500"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-easing="ease-in-sine"
+            >
               <NftCard key={item.id} item={item} />
             </Col>
           ))}

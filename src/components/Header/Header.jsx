@@ -2,6 +2,7 @@ import React,{useEffect, useRef} from 'react'
 import "./header.css"
 import { Container } from 'reactstrap'
 import {NavLink, Link} from "react-router-dom"
+import logo from "../../assets/images/BlitBlockLogo.png";
 const NAV__LINKS = [
   {
     display: "Home",
@@ -16,8 +17,16 @@ const NAV__LINKS = [
     url: "/create",
   },
   {
+    display: "About",
+    url: "/about",
+  },
+  {
     display: "Contact",
     url: "/contact",
+  },
+  {
+    display: "Dashboard",
+    url: "/dashboard",
   },
 ];
 const Header = () => {
@@ -40,10 +49,7 @@ const Header = () => {
         <div className="navigation">
           <div className="logo">
             <h2 className="d-flex gap-2 align-items-center">
-              <span>
-                <i className="ri-fire-fill"></i>
-              </span>
-              NFT's
+              <img src={logo} alt="" className="logo__header"/>
             </h2>
           </div>
           <div className="nav__menu">

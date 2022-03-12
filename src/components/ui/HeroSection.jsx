@@ -4,17 +4,21 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import heroImg from "../../assets/images/hero.jpg"
-import heroImg1 from "../../assets/images/hero1.png"
+import heroImg1 from "../../assets/images/PIC_1.png"
+
 const HeroSection = () => {
+
   return (
-    <section className="hero__section">
+    <section
+      className="hero__section"
+    >
       <Container>
         <Row>
           <Col lg="6" md="6">
             <div className="hero__content">
               <h2>
-                Discover rare digital art and collect{" "}
-                <span>sell extraordinary</span>NFT's
+                The next Generation
+                <span>Marketplace</span> 
               </h2>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -35,7 +39,7 @@ const HeroSection = () => {
           </Col>
           <Col lg="6" md="6">
             <div className="hero__img">
-              <img src={heroImg1} alt="" className="w-100" />
+              <img src={heroImg1} alt="" />
             </div>
           </Col>
         </Row>

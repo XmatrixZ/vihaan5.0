@@ -95,16 +95,6 @@ export const NFT__DATA = [
     creatorImg: ava04,
     currentBid: 5.89,
   },
-
-  {
-    id: "09",
-    title: "Travel Monkey Club",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
-    imgUrl: img09,
-    creator: "Trista Francis",
-    creatorImg: ava05,
-    currentBid: 5.89,
-  },
 ];
 
 export const SELLER__DATA = [

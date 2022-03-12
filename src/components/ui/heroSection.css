@@ -2,10 +2,11 @@
     margin-top: 70px !important;
     background-color: rgb(29,17,79);
     height: 90vh;
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
 }
 .hero__content h2{
+    margin-top: 5rem;
     line-height: 55px;
     font-size:2.5rem;
 }
@@ -51,4 +52,6 @@
 }
 .hero__img img{
     border-radius: 7px;
+    width: 28rem;
+    height: 28rem;
 }

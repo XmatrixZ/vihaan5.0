@@ -64,6 +64,11 @@
 .nav__right .btn a:hover{
     color: #fff;
 }
+.logo__header{
+    width: 60px;
+    height: 60px;
+}
+
 .moblie__menu{
     color: #fff;
     font-size:1.3rem;
