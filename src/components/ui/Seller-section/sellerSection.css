@@ -1,0 +1,23 @@
+.SellerSectionBg{
+    background: url(../../../assets//images/world.png);
+    /* background: linear-gradient(0deg, rgb(29,17,79) 3%, rgba(0,0,0,1) 30%); */
+    opacity: 0.95;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.seller__section-title h3{
+    color: #FFFF;
+}
+
+.seller__img{
+    width: 80px;
+    height: 80px;
+}
+
+.seller__content h6{
+    font-size: 1rem;
+    color: #FFFF;
+}
