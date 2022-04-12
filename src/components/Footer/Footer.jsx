@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css"
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-
+import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 const MY_ACCOUNT = [
@@ -27,19 +27,27 @@ const MY_ACCOUNT = [
 const COMPANY = [
   {
     display: "About",
-    url: "#",
+    url: "/home",
   },
   {
-    display: "Career",
-    url: "#",
+    display: "Influencer",
+    url: "#Influencers",
+  },
+  {
+    display: "Brands",
+    url: "#Brands",
+  },
+  {
+    display: "E-Sports",
+    url: "#ESports",
   },
   {
     display: "Contact Us",
-    url: "/contact",
+    url: "#ContactUS",
   },
   {
-    display: "Dashboard",
-    url: "#",
+    display: "Team",
+    url: "/team",
   },
 ];
 
@@ -57,12 +65,18 @@ const Footer = () => {
                 NFT's
               </h2>
               <p>
-              Our platform is tailor-made for novice creators who don’t get opportunities in this competitive world. Similarly, our platform makes it easy for companies, especially, the upcoming startups to hire innovators at a cheaper rate. This model solves both the major problems which we have discussed before. The video demonstrations/ image of the project can be included as an NFT by the creators/ developers.
+                Our platform is tailor-made for novice creators who don’t get
+                opportunities in this competitive world. Similarly, our platform
+                makes it easy for companies, especially, the upcoming startups
+                to hire innovators at a cheaper rate. This model solves both the
+                major problems which we have discussed before. The video
+                demonstrations/ image of the project can be included as an NFT
+                by the creators/ developers.
               </p>
             </div>
           </Col>
           <Col lg="2" md="3" sm="6">
-            <h5>My Account</h5>
+            <h5>Team</h5>
             <ListGroup className="list__group">
               {MY_ACCOUNT.map((item, index) => (
                 <ListGroupItem key={index} className="list__item__footer">
@@ -76,32 +90,41 @@ const Footer = () => {
             <ListGroup className="list__group">
               {COMPANY.map((item, index) => (
                 <ListGroupItem key={index} className="list__item__footer">
-                  <Link to={item.url}>{item.display}</Link>
+                  <HashLink to={item.url}>{item.display}</HashLink>
                 </ListGroupItem>
               ))}
             </ListGroup>
           </Col>
           <Col lg="3" md="6" sm="6">
-            <h5>NewsLetter</h5>
-            <input type="text" className="newsletter" placeholder="Email" />
             <div className="social__links d-flex gap-3 align-items-center">
               <span>
                 <Link to="#">
-                  <i className="ri-facebook-line"></i>
+                  <i
+                    className="ri-facebook-line"
+                    style={{ fontSize: "3rem" }}
+                  ></i>
                 </Link>
               </span>
               <span>
                 <Link to="#">
-                  <i className="ri-instagram-line"></i>
+                  <i
+                    className="ri-instagram-line"
+                    style={{ fontSize: "3rem" }}
+                  ></i>
                 </Link>
               </span>
               <span>
                 <Link to="#">
-                  <i className="ri-telegram-line"></i>
+                  <i className="ri-telegram-line" style={{ fontSize: "3rem" }}>
+                  </i>
                 </Link>
               </span>
-              <span><Link to="#"><i className="ri-discord-line"></i></Link></span>
-
+              <span>
+                <Link to="#">
+                  <i className="ri-discord-line" style={{ fontSize: "3rem" }}>
+                  </i>
+                </Link>
+              </span>
             </div>
           </Col>
           <Col lg="12" className="mt-4 text-center">

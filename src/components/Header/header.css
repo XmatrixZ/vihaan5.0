@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     z-index: 1111111;
+    background: #14141f !important;
 }
 
 .navigation{
@@ -33,7 +34,7 @@
 
 .header__shrink{
     background: #14141f !important;
-    box-shadow: 2px 2px 4px -2px #e250e5 !important;
+    box-shadow: 2px 4px 4px -2px #e250e5 !important;
 }
 
 .nav__item a:hover{

@@ -8172,7 +8172,14 @@ h1, h2, h3, h4, h5,
 
 .heading-section {
   font-size: 28px;
-  color: #fff; }
+    background: linear-gradient(-45deg,#44f1ff,#105459,#44f1ff,#105459);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-stroke: 3px transparent ;
+    -webkit-text-fill-color: #105459;
+    display: inline-block;
+    font-family: 'Apex New' !important;
+}
 
 .img {
   background-size: cover;
@@ -8182,7 +8189,6 @@ h1, h2, h3, h4, h5,
 .form-control {
   height: 50px;
   background: rgba(255, 255, 255, 0.03);
-  color: rgba(255, 255, 255, 0.8) !important;
   font-size: 14px;
   border-radius: 5px;
   -webkit-box-shadow: none !important;
@@ -8192,16 +8198,16 @@ h1, h2, h3, h4, h5,
   padding-right: 20px; }
   .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: rgba(255, 255, 255, 0.3) !important; }
+    color: rgb(0, 0, 0) !important; }
   .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    color: rgba(255, 255, 255, 0.3) !important; }
+    color: rgb(0, 0, 0) !important; }
   .form-control:-ms-input-placeholder {
     /* IE 0+ */
-    color: rgba(255, 255, 255, 0.3) !important; }
+    color: rgb(0, 0, 0) !important; }
   .form-control:-moz-placeholder {
     /* Firefox 18- */
-    color: rgba(255, 255, 255, 0.3) !important; }
+    color: rgb(0, 0, 0) !important; }
   .form-control:focus, .form-control:active {
     border-color: #bc9864 !important;
     background: rgba(255, 255, 255, 0.1); }
@@ -8321,3 +8327,6 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: 500; }
+#ContactUS{
+  background-color: #e8fdff;
+}

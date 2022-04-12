@@ -1,15 +1,18 @@
 import React from "react";
-// import {Container} from "reactstrap"
 import "./Home.css"
 import HeroSection from "../components/ui/HeroSection";
-import LiveAuction from "../components/ui/live-auction/LiveAuction"
-import SellerSection from "../components/ui/Seller-section/SellerSection"
+import Influencers from "../components/ui/influencer/Influencer"
+import Brands from "../components/ui/Brands/brands";
+import ESports from "../components/ui/ESports/ESports";
+import Contact from "./Contact";
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <LiveAuction />
-      <SellerSection />
+      <Influencers />
+      <Brands />
+      <ESports />
+      <Contact />
     </>
   );};
 

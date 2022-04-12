@@ -3,30 +3,31 @@ import "./header.css"
 import { Container } from 'reactstrap'
 import {NavLink, Link} from "react-router-dom"
 import logo from "../../assets/images/BlitBlockLogo.png";
+import { HashLink } from 'react-router-hash-link';
 const NAV__LINKS = [
   {
     display: "Home",
     url: "/home",
   },
   {
-    display: "Market",
-    url: "/market",
+    display: "Influencers",
+    url: "#Influencers",
   },
   {
-    display: "Create",
-    url: "/create",
+    display: "Brands",
+    url: "#Brands",
   },
   {
-    display: "About",
-    url: "/about",
+    display: "E-Sports",
+    url: "#ESports",
   },
   {
-    display: "Contact",
-    url: "/contact",
+    display: "Contact Us",
+    url: "#ContactUS",
   },
   {
-    display: "Dashboard",
-    url: "/dashboard",
+    display: "Team",
+    url: "/team",
   },
 ];
 const Header = () => {
@@ -49,7 +50,11 @@ const Header = () => {
         <div className="navigation">
           <div className="logo">
             <h2 className="d-flex gap-2 align-items-center">
-              <img src={logo} alt="" className="logo__header"/>
+              <img
+                src="https://res.cloudinary.com/japnoor/image/upload/v1649685210/Echio_Logo_1_2_flvnak.png"
+                alt=""
+                className="logo__header"
+              />
             </h2>
           </div>
           <div className="nav__menu">
@@ -58,28 +63,17 @@ const Header = () => {
                 <li className="nav__item" key={index}>
                   <NavLink
                     to={item.url}
-                    className={navClass =>
+                    className={(navClass) =>
                       navClass.isActive ? "active" : ""
                     }
                   >
-                    {item.display}
+                    <HashLink smooth to={item.url}>
+                      {item.display}
+                    </HashLink>
                   </NavLink>
                 </li>
               ))}
             </ul>
-            <div className="nav__right d-flex align-items-center gap-5">
-              <button className="btn">
-                <Link to="/wallet" className="d-flex gap-2 align-items-center">
-                  <span>
-                    <i className="ri-wallet-line"></i>
-                  </span>
-                  Login
-                </Link>
-              </button>
-              <span className="mobile__menu">
-                <i className="ri-menu-line"></i>
-              </span>
-            </div>
           </div>
         </div>
       </Container>

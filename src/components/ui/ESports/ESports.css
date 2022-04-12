@@ -1,0 +1,161 @@
+.ESport{
+    max-width: 100% !important;
+    padding: 3rem 0rem;
+}
+
+.single__nft__card{
+    padding: 20px;
+    margin-bottom:5rem;
+    border-radius:10px;
+    background-color:#343444;
+}
+
+.nft__img img{
+    border-radius: 10px;
+}
+.nft__img{
+    margin-bottom: 15px;
+}
+.nft__title{
+    margin-bottom: 15px;
+}
+.nft__title a{
+    color: #fff;
+    font-size:1rem;
+    text-decoration: none;
+}
+.nft__title a:hover{
+    color: #fff;
+}
+.creator__img{
+    width: 40px;
+    height: 40px;
+}
+.creator__info h6{
+    font-size: 0.7rem;
+    color: #fff;
+    opacity: 80%;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+.creator__info p{
+    font-size: 0.9rem;
+    color: #fff;
+    opacity: 100%;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.bid__btn{
+    border:none;
+    outline: none;
+    padding: 5px 22px;
+    background:transparent;
+    border:1px solid #5142FC;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    border-radius: 50px;
+    transition: 0.3s;
+    background: #5142FC;
+}
+
+.bid__btn:hover{
+    background: #FFFFFF;
+    color: #5142FC;
+}
+
+.history__link a{
+    text-decoration: none;
+    color:#FFFFFF;
+    opacity: 85%;
+    font-size: 0.9rem;
+}
+
+.history__link a:hover{
+    color:#FFFFFF;
+}
+
+.live__auction__top h3{
+    color:#FFFFFF;
+}
+
+.live__auction__top span a{
+    text-decoration: none;
+    color:#FFFFFF;
+    border-bottom: 1px solid #5142FC;
+}
+.ESportsColorContent{
+    color:#FFFFFF;
+    font-family: 'Apex New' !important;
+}
+.ESportsQuote h2{
+    color:#FFFFFF !important;
+    font-family: 'Apex New' !important;
+}
+.ESportsContent{
+    font-size: 1.4rem;
+}
+#videoESports{
+    position: fixed !important;
+    z-index: -1 !important;
+    max-width: 100% !important;
+}
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+  object-fit: cover !important;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+}
+#vidtop-content {
+  top: 0;
+  color: #fff;
+}
+.vid-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 1rem;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .vid-info {
+    width: 50%;
+    padding: 0.5rem;
+  }
+  .vid-info h1 {
+    margin-bottom: 0.2rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .vid-info .acronym {
+    display: none;
+  }
+}

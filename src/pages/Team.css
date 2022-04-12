@@ -13,6 +13,7 @@ body{
 	/* background-color:#009688; */
 	min-height: 100vh;
 	padding:70px 15px 30px;
+	background-color: #e8fdff;
 }
 
 .container{
@@ -30,13 +31,21 @@ body{
 	max-width: 100%;
 	margin-bottom: 70px;
 }
-
+.team-items{
+	display: flex;
+	flex-direction: column;
+}
 .team-section .section-title h1{
 	font-size: 40px;
-	text-align: center;
+	text-align: center !important;
 	margin:0;
-	color: #ffffff;
-	font-weight: 700;
+	background: linear-gradient(-45deg,#44f1ff,#105459,#44f1ff,#105459);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-stroke: 3px transparent ;
+    -webkit-text-fill-color: #105459;
+    margin-left:7px;
+    font-family: 'Apex New' !important;
 }
 
 .team-section .section-title p{
@@ -73,7 +82,7 @@ body{
 	padding:0 15px;
 }
 .team-section .team-items .item .inner .info{
-	background-color:#5142FC;
+	background-color:#105459;
 	text-align: center;
 	padding: 20px 15px;
 	border-radius:8px;
@@ -108,7 +117,7 @@ body{
 	height: 32px;
 	width: 32px;
 	background-color: #ffffff;
-	color:#009688;
+	color:#105459;
 	border-radius: 50%;
 	margin:0 2px;
 	text-align: center;
